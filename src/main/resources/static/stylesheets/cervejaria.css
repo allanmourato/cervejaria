@@ -1,0 +1,22 @@
+/* 
+###############
+-> COMPONENTES
+###############
+*/
+
+.bw-field-action{
+	
+	display: flex;
+}
+
+/*
+##############
+->BOTÃO ADICIONAR +
+##############
+*/
+.bw-field-action__icon {
+	
+	margin: 6px 0 0 5px;
+	
+	font-size: 18px;
+}
