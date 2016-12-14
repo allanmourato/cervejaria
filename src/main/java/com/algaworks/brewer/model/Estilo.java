@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "estilo")
@@ -17,6 +18,7 @@ public class Estilo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long codigo;
 	
+	@NotNull(message = "o nome deve ser preenchido")
 	private String nome;
 	
 	@OneToMany(mappedBy = "estilo")
